@@ -9,6 +9,7 @@
 int calculateCats() {
     int8_t someNumber = 21;
 
-    printf("%d", someNumber);
+    scanf("%d", &someNumber);
+    printf("%d",someNumber);
     return 0;
 }
