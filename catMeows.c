@@ -8,7 +8,7 @@ struct cat {
     void (*meow)();
 };
 struct cat* new_cat(char* name, void (meow)()) {
-    struct cat *this = (struct dog *)malloc(sizeof(struct cat));
+    struct cat *this = (struct cat *)malloc(sizeof(struct cat));
     this->name = "Default name";
     this->meow = meow;
 
@@ -18,7 +18,7 @@ void meow() { printf("meow\n"); }
 void rawr() { printf("rawr\n"); }
 int
 
-main(int argc, char** argv) {
+runMeow(int argc, char** argv) {
     struct cat *floof = new_cat("floof", meow);
     struct cat *captain = new_cat("captain", rawr);
     // ...
