@@ -3,4 +3,5 @@ project(catsEverywhere C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(catsEverywhere main.c)
+add_executable(catsEverywhere main.c
+        catMeows.c)
