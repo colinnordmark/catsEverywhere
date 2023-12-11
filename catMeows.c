@@ -9,7 +9,7 @@ struct cat {
 };
 struct cat* new_cat(char* name, void (meow)()) {
     struct cat *this = (struct dog *)malloc(sizeof(struct cat));
-    this->name = "fido";
+    this->name = "Default name";
     this->meow = meow;
 
     return this;
