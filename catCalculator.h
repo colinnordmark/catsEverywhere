@@ -9,7 +9,11 @@
 int calculateCats() {
     int8_t someNumber = 21;
 
-    scanf("%d", &someNumber);
+    if(scanf("%d", &someNumber) != 1) {
+        printf("FAILED TO READ VALUE");
+        return -1;
+    }
+
     printf("%d",someNumber);
     return 0;
 }
