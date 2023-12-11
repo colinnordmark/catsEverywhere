@@ -1,0 +1,3 @@
+/Users/colin/_colin/catsEverywhere/cmake-build-debug/CMakeFiles/catsEverywhere.dir
+/Users/colin/_colin/catsEverywhere/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/colin/_colin/catsEverywhere/cmake-build-debug/CMakeFiles/rebuild_cache.dir
