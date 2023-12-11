@@ -28,8 +28,8 @@ void rawr() { printf("rawr\n"); }
 int
 
 main(int argc, char** argv) {
-    struct cat *floof = new_cat("fido", meow);
-    struct cat *captain = new_cat("snoopy", rawr);
+    struct cat *floof = new_cat("floof", meow);
+    struct cat *captain = new_cat("captain", rawr);
     // ...
     captain->meow();      // prints "arf"
     floof->meow();    // prints "woof"
