@@ -32,8 +32,8 @@ void renderLine() {
     printf("----------------------------/ \n");
 }
 
-void printOptions(char *options[], int cursor) {
-    for(int i = 0; i < sizeof(options) / sizeof(*options[0]); i++) {
+void printOptions(char *options[],int size, int cursor) {
+    for(int i = 0; i < size; i++) {
         if(cursor == i) {
             printf(ANSI_BOLD_BLUE "> " ANSI_RESET);
         }
@@ -47,7 +47,7 @@ int renderCatAppMain(int *cursor) {
     printf("Cat application v0.1 \n");
     renderLine();
     printf(ANSI_BLUE "Use arrowkeys to navigate application \n");
-    printOptions(mainOptions, *cursor);
+    printOptions(mainOptions, sizeof(mainOptions) / sizeof(mainOptions[1]), *cursor);
     return 0;
 }
 
