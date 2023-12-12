@@ -6,13 +6,13 @@
 #define UTILITIES_H
 #include<time.h>
 
-void delay(int second){
+void delay(int milliseconds){
 
-    int milsec = 1000 * 1000 * second;
+    int delayAmount = 1000 * milliseconds;
 
     clock_t startTime = clock();
 
-    while(clock() < (startTime + milsec));
+    while(clock() < (startTime + delayAmount));
 
 }
 #endif //UTILITIES_H

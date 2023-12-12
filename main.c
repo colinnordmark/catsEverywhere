@@ -12,8 +12,9 @@ int8_t numbers[] = {
 int main() {
     bool run = true;
     int cursor = 1;
+
     while (run) {
-        printf(ANSI_CLEAR);
+        printf(CONSOLE_CLEAR);
         renderCatAppMain(&cursor);
         calculateCats();
     }

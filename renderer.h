@@ -12,7 +12,7 @@
 #define ANSI_CYAN "\x1b[36m"
 #define ANSI_RESET "\x1b[0m"
 #define ANSI_BOLD_BLUE "\e[1;34m"
-#define ANSI_CLEAR "\e[1;1H\e[2J"
+#define CONSOLE_CLEAR "\e[1;1H\e[2J"
 
 
 #include <stdio.h>

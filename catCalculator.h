@@ -16,7 +16,7 @@ int calculateCats() {
     printf("Please enter number of cats: ");
 
     while (scanf("%d", &someNumber) != 1) {
-        delay(2);
+        delay(250);
         printf(ANSI_RED "FAILED TO READ VALUE \n");
         printf(ANSI_RESET "Please enter a valid cat amount: ");
 
