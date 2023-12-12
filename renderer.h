@@ -11,6 +11,8 @@
 #define ANSI_MAGENTA "\x1b[35m"
 #define ANSI_CYAN "\x1b[36m"
 #define ANSI_RESET "\x1b[0m"
+#define ANSI_BOLD_BLUE "\e[1;34m"
+
 
 #include <stdio.h>
 enum Menus {
@@ -20,30 +22,33 @@ enum Menus {
 };
 
 char *mainOptions[] = {
-    "Option 1",
-    "Option 2",
-    "Option 3",
-    "Option 4"
+    "Calculator",
+    "Meow simulator",
+    "Cat creator (WIP)",
+    ANSI_RED "EXIT" ANSI_RESET
 };
 
 void renderLine() {
     printf("----------------------------/ \n");
 }
 
-void printOptions(char *options[]) {
-    for(int i = 0; i < sizeof(options); i++) {
+void printOptions(char *options[], int cursor) {
+    for(int i = 0; i < sizeof(options) / sizeof(*options[0]); i++) {
+        if(cursor == i) {
+            printf(ANSI_BOLD_BLUE "> " ANSI_RESET);
+        }
         printf(ANSI_RESET "%s\n", options[i]);
     }
 }
 
-int renderCatAppMain() {
+int renderCatAppMain(int *cursor) {
     printf("Render output: \n");
 
     printf("Cat application v0.1 \n");
     renderLine();
     printf(ANSI_BLUE "Use arrowkeys to navigate application \n");
-    printOptions(mainOptions);
-    return 1;
+    printOptions(mainOptions, *cursor);
+    return 0;
 }
 
 #endif //RENDERER_H
