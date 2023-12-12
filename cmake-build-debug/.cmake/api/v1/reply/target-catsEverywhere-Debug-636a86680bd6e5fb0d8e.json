@@ -91,7 +91,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -112,6 +113,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "catCalculator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "/Users/colin/Library/Application Support/JetBrains/CLionNova2023.3/extensions/com.intellij.database/schema.layouts/renderer.h",
 			"sourceGroupIndex" : 1
 		}
 	],
