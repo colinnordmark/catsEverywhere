@@ -12,16 +12,18 @@
 #define ANSI_CYAN "\x1b[36m"
 #define ANSI_RESET "\x1b[0m"
 #define ANSI_BOLD_BLUE "\e[1;34m"
+#define ANSI_CLEAR "\e[1;1H\e[2J"
 
 
 #include <stdio.h>
+
 enum Menus {
     MAIN = 1,
     CALCULATOR = 2,
     MEOWER = 3
 };
 
-char *mainOptions[] = {
+char* mainOptions[] = {
     "Calculator",
     "Meow simulator",
     "Cat creator (WIP)",
@@ -32,16 +34,16 @@ void renderLine() {
     printf("----------------------------/ \n");
 }
 
-void printOptions(char *options[],int size, int cursor) {
-    for(int i = 0; i < size; i++) {
-        if(cursor == i) {
+void printOptions(char* options[], int size, int cursor) {
+    for (int i = 0; i < size; i++) {
+        if (cursor == i) {
             printf(ANSI_BOLD_BLUE "> " ANSI_RESET);
         }
         printf(ANSI_RESET "%s\n", options[i]);
     }
 }
 
-int renderCatAppMain(int *cursor) {
+int renderCatAppMain(int* cursor) {
     printf("Render output: \n");
 
     printf("Cat application v0.1 \n");
@@ -52,3 +54,4 @@ int renderCatAppMain(int *cursor) {
 }
 
 #endif //RENDERER_H
+

@@ -7,4 +7,5 @@ add_executable(catsEverywhere main.c
         catMeows.c
         catCalculator.h
         renderer.h
-        renderer.h)
+        renderer.h
+        utilities.h)
