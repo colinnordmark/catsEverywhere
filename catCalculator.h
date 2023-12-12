@@ -11,6 +11,7 @@
 int calculateCats() {
     int8_t someNumber = 21;
 
+    printf("Please enter number of cats: ");
     if(scanf("%d", &someNumber) != 1) {
         printf("FAILED TO READ VALUE");
         return -1;

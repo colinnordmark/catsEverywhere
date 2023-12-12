@@ -6,4 +6,5 @@ set(CMAKE_C_STANDARD 99)
 add_executable(catsEverywhere main.c
         catMeows.c
         catCalculator.h
-        "../../Library/Application Support/JetBrains/CLionNova2023.3/extensions/com.intellij.database/schema.layouts/renderer.h")
+        renderer.h
+        renderer.h)

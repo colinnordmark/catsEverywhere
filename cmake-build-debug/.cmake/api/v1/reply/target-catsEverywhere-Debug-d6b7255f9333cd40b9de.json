@@ -117,7 +117,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "/Users/colin/Library/Application Support/JetBrains/CLionNova2023.3/extensions/com.intellij.database/schema.layouts/renderer.h",
+			"path" : "renderer.h",
 			"sourceGroupIndex" : 1
 		}
 	],
